@@ -10,11 +10,111 @@
         "body": [
           {
             "type": "text",
-            "value": "Leadin. Something to draw the reader in. Graphics is the only visuals and words desk at the Spectator."
+            "value": "<i>Editor’s note: Two lecturers spoke to </i>The Eye<i> on the condition of anonymity. Their pseudonyms were generated using a random name generator.</i>"
           },
           {
             "type": "text",
-            "value": "Nutgraf. What is the meat of the story? Why does this matter?"
+            "value": "Iris had one condition before speaking with me: Find somewhere private. We met in Spectator’s Riverside Church office—empty during the afternoons—which felt like a world away from the thin walls and shared offices of her department."
+          },
+          {
+            "type": "text",
+            "value": "“Retaliation is rampant,” she told me, as March rain quietly streamed down the windows. If being off campus wasn’t enough, the storm seemed to offer its own kind of protection."
+          },
+          {
+            "type": "text",
+            "value": "Iris, who spoke to <i>The Eye</i> on the condition of anonymity citing fear of retaliation, has built her life in New York City since immigrating from East Asia years ago. Today, she is a lecturer in the East Asian languages and cultures department, a department that houses 31 lecturers—the most across all departments at Columbia."
+          },
+          {
+            "type": "text",
+            "value": "Over the course of a year, I spoke with over 20 current and former non-tenure-track faculty, most of whom are language lecturers like Iris, amounting to over 14 hours of recorded interviews. Some of these conversations were cautiously conducted off campus, virtually, and even in the desolate basement of a department building."
+          },
+          {
+            "type": "text",
+            "value": "Lecturers are defined as specialized instructors in a full-time, non-tenure-track position who “meet a programmatic need for instruction,” according to the Faculty Handbook."
+          },
+          {
+            "type": "text",
+            "value": "The majority of lecturers are women—the opposite is true of tenured professors—and, in the case of departments like East Asian languages and cultures and Middle Eastern, South Asian, and African studies, many lecturers are immigrants of color. Iris said EALAC lecturers have been “particularly timid and shy” about speaking out to the rest of the department. Like virtually all EALAC lecturers, Iris relies on Columbia not only to make a living, but also for her immigration status. As Iris puts it, “Green card is everything.”"
+          },
+          {
+            "type": "graphic",
+            "value": {
+              "asset": "womenmen.html"
+            }
+          },
+          {
+            "type": "graphic",
+            "value": {
+              "asset": "citizenship.html"
+            }
+          },
+          {
+            "type": "text",
+            "value": "When reached for comment<i>,</i> a University spokesperson provided <i>The Eye </i>with a written statement from Bruno Bosteels, professor in the Latin American and Iberian cultures department and acting dean of humanities in the Faculty of Arts and Sciences. Bosteels wrote, “We are proud that Columbia is a national leader in language instruction and that our language faculty are among the most stellar in the country. Strengthening this essential part of the Arts and Sciences is a top priority, and we have taken numerous steps over the past year – and in previous years – in partnership with the Lecturer Advisory Committee and many others, to elevate language instruction at Columbia and to address faculty concerns.”"
+          },
+          {
+            "type": "text",
+            "value": "The problems Columbia lecturers face extend beyond their lack of tenure. Many lecturers cherish being primarily instructional faculty and focusing on teaching, while also understanding that by becoming a lecturer, they will not be on the tenure track."
+          },
+          {
+            "type": "text",
+            "value": "Instead, the problems that these lecturers illustrated were far more complex. As Columbia increases its hiring of and reliance on lecturers for teaching instruction, multiple lecturers told me that they, on the University personnel ladder, are treated as “second-class” faculty members."
+          },
+          {
+            "type": "text",
+            "value": "Their individual experiences of how this “second-class” status manifests, along with documentation obtained by <i>The Eye,</i> reveal systemic issues, including opaque processes for how lecturers are reviewed and denied promotion and limited paths to seek recourse for administrative and departmental mistreatment."
+          },
+          {
+            "type": "text",
+            "value": "Without the protection of job security, many lecturers I interviewed were afraid to speak up, quietly enduring their working conditions. Others have left Columbia entirely. This fall, however, a non-tenure-track faculty union effort went public, launching a bold new campaign to spread awareness and convince other contingent faculty to join their cause."
+          },
+          {
+            "type": "text",
+            "value": "<b>The evolution of the lecturer </b>"
+          },
+          {
+            "type": "text",
+            "value": "Last September, I dug through internet archives and official websites to try and understand the position’s inner workings, reading up on the history of lecturers, faculty committees, and related Spectator coverage. Giving myself only a day to understand this convoluted system was a brazen, but ultimately failed attempt."
+          },
+          {
+            "type": "text",
+            "value": "Surprisingly, over months of interviews and research, I realized lecturers, too, are somewhat confused about their rights, responsibilities, and protections."
+          },
+          {
+            "type": "text",
+            "value": "The lecturer position varies depending on the department. Some are language instructors like Iris; others are lecturers in certain disciplines teaching courses like chemistry and English. But they all share an important feature: Each one is dependent on a review and renewal system and will never receive tenure, regardless of the number of years they have taught."
+          },
+          {
+            "type": "text",
+            "value": "Reviews occur at the first, second, fifth, and eighth year of a lecturer’s career, after which they are reviewed on a regular, five-year cycle. During their eighth-year review, they can begin to be considered for promotion, which requires a “major review” involving the department chair. A three-person review committee then determines whether a lecturer’s contract will be extended, terminated, or promoted to a senior lecturer contract, which is given to lecturers “with substantial experience and accomplishments,” according to the Faculty Handbook."
+          },
+          {
+            "type": "text",
+            "value": "It was only in 2017 that the Faculty of Arts and Sciences passed a resolution to include lecturers in FAS, a move that offered more pathways for lecturers to take part in faculty governance."
+          },
+          {
+            "type": "text",
+            "value": "“It was quite a shock to many of us—we always thought we were members of the faculty,” Taoufik Ben-Amor, senior lecturer in Arabic studies and coordinator of the Arabic programs, said."
+          },
+          {
+            "type": "text",
+            "value": "Unlike many lecturers I talked to, Ben-Amor, who has been a part of MESAAS since 1992, spoke frankly about lecturers’ vexed positioning within faculty. He explained his frustrations with the unchanging status of lecturers, having now seen three University presidents come and go. His Knox Hall office door was ajar—professors, administrators, and other lecturers walking by—and acknowledged that “most lecturers can’t talk to you.” “But I don’t care,” he said. “Because I’ve been talking the way I’ve been talking from the ’90s.”"
+          },
+          {
+            "type": "text",
+            "value": "The University Senate and the board of trustees created the lecturer position in 1987. A 2018 <a href=\"https://fas.columbia.edu/sites/default/files/content/Lecturer-Report-2018-1.pdf\">report</a> states that the position was created to address the needs of the EALAC department—where ladder-rank faculty were not sufficient to fulfill the demand for language instruction. Starting in 1994, as higher institutions across the United States began increasingly relying on lecturers, other departments at Columbia also hired lecturers, without requiring doctoral degrees."
+          },
+          {
+            "type": "text",
+            "value": "In 2004, the University Senate capped the percentage of lecturers, excluding language and School of the Arts lecturers, among all ladder-rank faculty to six percent—which has likely since been exceeded, according to a 2018 report."
+          },
+          {
+            "type": "text",
+            "value": "Senior lecturer Nicole Wallack and political science professor Andrew Nathan spearheaded the 2018 <a href=\"https://fas.columbia.edu/sites/default/files/content/Lecturer-Report-2018-1.pdf\">report</a> submitted to the FAS policy and planning committee to “identify discrepancies and resolve ambiguities” about lecturers. The report states that confusion and inconsistency surrounding the status of lecturers is because the position has “has evolved over time in an improvisatory fashion allowing different departments and schools to utilize lecturer positions for different purposes.”"
+          },
+          {
+            "type": "text",
+            "value": "“Lecturers play crucial roles in Arts and Sciences teaching and administration,” the report reads, listing the average course load for lecturers in the humanities, social sciences, and natural sciences as 4.5 courses during the 2016-17 academic year."
           },
           {
             "type": "graphic",
@@ -24,19 +124,442 @@
           },
           {
             "type": "text",
-            "value": "<i>Charlotte Li is a Graphics deputy editor. She can be contacted at </i><a href=\"mailto:charlotte.li@columbiaspectator.com\"><i>charlotte.li@columbiaspectator.com</i></a><i>.</i>"
+            "value": "<b>Where the lecturer stands today</b>"
           },
           {
             "type": "text",
-            "value": "<i>Jun Yi Zhang is a Graphics reporter. She can be contacted at </i><a href=\"mailto:junyi.zhang@columbiaspectator.com\"><i>junyi.zhang@columbiaspectator.com</i></a><i>.</i>"
+            "value": "Today, the requirements for lecturers differ dramatically from those outlined in the 1990s."
+          },
+          {
+            "type": "text",
+            "value": "According to the handbook, lecturers are now required to hold a doctorate or “its professional equivalent.” In EALAC, more than half of lecturers have a Ph.D. or Ed.D."
+          },
+          {
+            "type": "text",
+            "value": "Lecturers now publish research in addition to their teaching duties, which has traditionally only been an expectation for research faculty like professors. The 2018 report states that “many lecturers maintain an active scholarly life.” The report’s survey of lecturers revealed that 64 percent of respondents had published at least one article or book chapter and 27 percent had published at least one book in the last five years."
+          },
+          {
+            "type": "text",
+            "value": "The 2024-2025 Lecturer Review Guidelines cite published scholarly works as one way to get promoted to senior lecturer. What makes achieving this promotion particularly difficult is Columbia’s competitive model of requesting a leave of absence for professional development. Out of all the lecturers who apply for leave, only four are selected per academic year, an increase made in the past two years from the original two selected."
+          },
+          {
+            "type": "text",
+            "value": "Ben-Amor called Columbia’s leave of absence model “miserable.” When a potential classics department recruit who had “automatic leaves of absence” at Brown University asked Ben-Amor if Columbia did the same, he said he responded with an honest “no.”"
+          },
+          {
+            "type": "text",
+            "value": "An Arts and Sciences official wrote in a statement to <i>The Eye</i> that “in support of direct engagement with lecturers, the Dean of Humanities meets individually with every candidate for a lecturer position in the humanities during their campus visit.”"
+          },
+          {
+            "type": "text",
+            "value": "Spectator’s coverage of lecturers’ frustrations, although sparse, dates back to 2002, when Spectator staff writer Ben Casselman <a href=\"https://spectatorarchive.library.columbia.edu/?a=d&d=cs20020225-01.2.2&srpos=1&e=-------en-20--1--txt-txIN-lecturer+salary------\">wrote</a> that language lecturers were “paid only $33,000 to $35,000 a year, far less than even the most junior assistant professor.”"
+          },
+          {
+            "type": "text",
+            "value": "The 2018 report stated that lecturers’ “salaries do not usually go up when a department increases a lecturer’s teaching load or other work assignment.” Many respondents also said their salary increases “do not keep up with the cost of living.”"
+          },
+          {
+            "type": "text",
+            "value": "“We made a lot of recommendations,” Ben-Amor said about his participation in creating the 2018 report. “But quite frankly, the University acted on very little of that—the question of salary, the question of status, the question of benefit, the question of access.”"
+          },
+          {
+            "type": "text",
+            "value": "“It barely pays the bill but pays the insurance and everything,” Iris said about her salary. “I do have coworkers who actually still have to rely on parents for the first several years to make ends meet and everything.”"
+          },
+          {
+            "type": "text",
+            "value": "<b>Departmental mistreatment, ‘laissez-faire’ administration: When lecturers decide to leave </b>"
+          },
+          {
+            "type": "text",
+            "value": "Lecturers at Columbia are in a difficult bind: Although they share the title of lecturer with faculty members across the University, they spend most of their time isolated within their own departments, where departmental leadership by and large dictates their quality of work life."
+          },
+          {
+            "type": "text",
+            "value": "The 2018 report explicitly referenced a split between language and nonlanguage lecturers where a “majority” of language lecturers “[did] not feel that they have received appropriate course relief in compensation for their advising, service and administrative roles, compared to only 29% of the non-language lecturers.”"
+          },
+          {
+            "type": "text",
+            "value": "Over the course of my interviews with EALAC lecturers, they described a pattern where lecturers’ concerns within EALAC were rarely addressed by the department and University administration, leaving lecturers to stand up for themselves and risk retaliation in the process."
+          },
+          {
+            "type": "text",
+            "value": "Iris called the University’s administration style “laissez-faire,” letting departments form autonomous ecosystems. The lack of oversight is exacerbated by the fact that leadership positions in the department do not have term limits, Iris said. This includes directors of language programs, who facilitate relationships between language lecturers and the rest of their department."
+          },
+          {
+            "type": "text",
+            "value": "“I think that [the] department doesn’t have much motivation to get involved,” Iris said. “They don’t see any problem. We still have students. Yeah, students are happy. That’s the most important thing. But individual lecturers, they are disposable, you can replace them.”"
+          },
+          {
+            "type": "image",
+            "value": {
+              "width": "50%",
+              "asset": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/5WVEOFSU5NABFAAVYUJYL6YRAQ.png",
+              "caption": "",
+              "credit": "Eva Vu-Stern / Illustrations Trainee"
+            }
+          },
+          {
+            "type": "text",
+            "value": "Former EALAC lecturer Aviya was the first of two lecturers I spoke with who said they left their positions partly because of how they were treated at Columbia. Aviya, who spoke to <i>The Eye </i>on the condition of anonymity citing safety concerns, left their position years ago."
+          },
+          {
+            "type": "text",
+            "value": "Aviya explained that their resignation came at the tail end of a grievance they filed with the University Senate faculty affairs committee regarding a procedural irregularity and lack of transparency when they were not promoted to senior lecturer during a review. Aviya also described “unfair” treatment and “discrimination” as factors that led them to file a grievance. The Faculty Handbook’s recommendation is to try to “resolve grievances informally through discussions with their chair” before enacting this process."
+          },
+          {
+            "type": "text",
+            "value": "The faculty affairs committee, a group of faculty members the University Statutes states is intended to help “mediate between the officer [of instruction] and the department or … the University administration,” looked into irregularities with Aviya’s review process."
+          },
+          {
+            "type": "text",
+            "value": "<i>The Eye </i>obtained the letter that the committee wrote to then-University Provost John H. Coatsworth recommending Aviya be “re-evaluated for promotion.” In this letter, which was signed by the committee’s co-chairs, the committee critiqued a lack of transparency in the review process."
+          },
+          {
+            "type": "text",
+            "value": "However, Coatsworth sustained the original decision to not promote Aviya. <i>The Eye </i>also obtained his letter."
+          },
+          {
+            "type": "text",
+            "value": "In the letter to Coatsworth, the committee wrote that the criteria for promotion were “vague” and that “outside reviewers said that [Aviya] would certainly have qualified for promotion in any other program.” The committee also noted instances of potential conflicts of interest during Aviya’s review process."
+          },
+          {
+            "type": "text",
+            "value": "The committee then reached out to other lecturers in the department to corroborate experiences."
+          },
+          {
+            "type": "text",
+            "value": "“How long will the loyal, devoted work of the lecturers continue, if they increasingly feel exploited and undervalued, if they can see that they may always be denied what they feel is a well-justified promotion?” the committee asked in its letter."
+          },
+          {
+            "type": "text",
+            "value": "Coatsworth wrote back, ultimately deciding that despite the committee’s recommendation, a conversation with someone in department leadership moved him to sustain the original decision. He wrote he did not find “procedural irregularities.”"
+          },
+          {
+            "type": "text",
+            "value": "According to Aviya—and Coatsworth’s letter—Coatsworth reached out only to one member of department leadership and no other parties, while the committee spoke to leadership, lecturers, and outside reviewers alike."
+          },
+          {
+            "type": "text",
+            "value": "“[Faculty affairs committee] found that it was unfairly reviewed,” Aviya said. “The only thing that they could do was to make a recommendation.”"
+          },
+          {
+            "type": "graphic",
+            "value": {
+              "asset": "flowchart.html"
+            }
+          },
+          {
+            "type": "text",
+            "value": "Aviya now works at another institution, where they said they received a substantially higher salary during their first year there than during any year working at Columbia, where they had worked for over a decade. Looking back, Aviya said the investigation challenging their review felt like a “waste of time,” using up many resources and energy from faculty members involved: “I’m like, you know what? Enough.”"
+          },
+          {
+            "type": "text",
+            "value": "Coatsworth outlined three steps to improve the “transparency” in the review process in his letter to the committee. Two current EALAC lecturers told me that the level of transparency for the review process has not improved."
+          },
+          {
+            "type": "text",
+            "value": "This October, an Arts and Sciences official wrote in a statement to <i>The Eye</i>:"
+          },
+          {
+            "type": "text",
+            "value": "“We implemented a new review process for all lecturers this academic year, representing a major transformation of one of the most important governance processes in the Arts and Sciences. Starting in Spring 2025, all lecturer in discipline and lecturer in language reviews will be handled by the Promotion and Tenure Committee, the standing committee that considers all faculty tenure and promotion cases."
+          },
+          {
+            "type": "text",
+            "value": "“A newly appointed co-chair of PTC will oversee reviews for lecturers, convening a special panel that will bring additional engagement and transparency to lecturer reviews and appointments, in direct response to faculty feedback. We are also establishing a new series of briefings and workshops with lecturers across all three A&S divisions to increase transparency and consultation around lecturer reviews and promotions.”"
+          },
+          {
+            "type": "text",
+            "value": "Aviya reflected on how much they had loved their colleagues, students, and New York City itself, despite moving away. “I’m happy now, and I have moved on,” they said."
+          },
+          {
+            "type": "text",
+            "value": "***"
+          },
+          {
+            "type": "text",
+            "value": "The second lecturer I spoke to, former senior lecturer in chemistry Karen Phillips, who completed her Ph.D. at Columbia in 2000<b>,</b> left her position in fall 2021 after feeling “disenchanted” with how the chemistry department excluded lecturers. When she taught at Columbia, she was also the chemistry department’s director of undergraduate studies."
+          },
+          {
+            "type": "text",
+            "value": "At the time of our video interview in April, Phillips said she now works as a private tutor and advisor. In 2020, she had debated moving back to Florida, where she received her undergraduate degree after growing up in Jamaica, to care for her mother."
+          },
+          {
+            "type": "text",
+            "value": "The way she was treated at Columbia further catalyzed the decision."
+          },
+          {
+            "type": "text",
+            "value": "According to Phillips, although she successfully ran for a position on the University Senate in 2020, she “didn’t feel like faculty to the same extent in [her] own department.” This was because while she participated in facultywide governance as a senator, lecturers were still not allowed at faculty meetings within the chemistry department. Because of this asymmetry, “there was so much irony.”"
+          },
+          {
+            "type": "text",
+            "value": "As the director of undergraduate studies, Phillips said she had to schedule separate meetings to talk with ladder-rank chemistry faculty, the only director of undergraduate studies she knew of that was not part of their own department’s faculty meetings."
+          },
+          {
+            "type": "text",
+            "value": "“There were lecturers who were in the department, from the time when I was in [Columbia’s] graduate school who may have been there for close to 40 years now. And those lecturers aren’t able to attend faculty meetings either,” Phillips said. “But if you were a brand new research faculty that joined the department yesterday, then you are entitled.”"
+          },
+          {
+            "type": "text",
+            "value": "A week after our interview, Phillips emailed me to explain that “Lecturers are not given the opportunity to participate in Chemistry faculty governance. Simply put, that means not having an opportunity to vote on any matter related to that department.”"
+          },
+          {
+            "type": "text",
+            "value": "Columbia presidents have provided their own input on how lecturers should serve the University that increasingly depends upon them. In a <a href=\"https://bwog.com/2021/07/deep-dive-into-pressure-to-teach-in-person-last-fall-administrative-tension-and-targeting-of-non-tenure-track-instructors/\">July 26, 2020, email </a>published by Bwog in 2021, then-University President Lee Bollinger and then-interim University Provost Ira Katznelson wrote to Executive Vice President for Arts and Sciences Amy Hungerford and then-Columbia College Dean James Valentini at the height of the pandemic: “the instructional faculty for the Core is largely composed of non-tenure-track individuals, which means we should have greater leeway to expect in-person instruction, if that’s what we deem best.”"
+          },
+          {
+            "type": "text",
+            "value": "“The previous President Bollinger<i> </i>considered us as disposable,” Iris said. “So you have that type of climate up there then … [it] trickles down.”"
+          },
+          {
+            "type": "text",
+            "value": "In a <a href=\"https://www.columbiaspectator.com/opinion/2024/09/18/the-next-columbia-president-should-be-a-humanist/\">September 2024 Spectator op-ed,</a> professor Dhananjay Jagannathan wrote that he heard former President Minouche Shafik express doubt as to why Columbia offers “labor-intensive language instruction in the age of Google Translate.”"
+          },
+          {
+            "type": "text",
+            "value": "<b>‘A step into the door’ for improvement </b>"
+          },
+          {
+            "type": "text",
+            "value": "Recently formed committees are attempting to address some of the lecturers’ major concerns, creating pathways for lecturers to connect with the administration more directly."
+          },
+          {
+            "type": "text",
+            "value": "After reading and discussing the 2018 report, the policy and planning committee, a 10-person body “elected to represent the Faculty of Arts and Sciences to … university leadership,” recommended the creation of a lecturer advisory committee. In 2019, the committee, which is composed of only lecturers, was formed to support and represent lecturers to the University more broadly. In 2022, the policy and planning committee included<a href=\"https://www.columbiaspectator.com/news/2022/04/15/faculty-of-arts-and-sciences-adds-senior-lecturer-to-policy-and-planning-committee-for-first-time/\"> a senior lecturer</a> on its board for the first time ever."
+          },
+          {
+            "type": "graphic",
+            "value": {
+              "asset": "timeline.html"
+            }
+          },
+          {
+            "type": "text",
+            "value": "Wallack, former lecturer advisory committee chair and the sole lecturer currently on the policy planning committee, which is otherwise made of ladder-rank faculty, said she sees it as her duty to make sure that lecturers’ “concerns and questions are represented.” During our interview in April, Wallack did not discuss what is currently being negotiated but said that one of the biggest changes in recent years has been having a conversation at all."
+          },
+          {
+            "type": "text",
+            "value": "“I think just having our presence in the room for these conversations foregrounding where we have and have not made progress—these are all issues that these are all ways in which our visibility is itself … important,” Wallack said."
+          },
+          {
+            "type": "text",
+            "value": "Ben-Amor voiced some criticism about the structure of the lecturer advisory committee in relation to the policy and planning committee since it does not have “direct access to the leadership of Arts and Sciences.” Instead, he said, the advisory committee has to go through the policy and planning committee, of which only one lecturer is a member, unrepresentative of the overall makeup of Columbia faculty."
+          },
+          {
+            "type": "text",
+            "value": "Wallack brought up many of the concerns I had heard from other lecturers, agreeing that a competitive leave of absence model and the review process’ lack of transparency are some of her primary concerns."
+          },
+          {
+            "type": "text",
+            "value": "The University Senate voted <a href=\"https://senate.columbia.edu/sites/default/files/content/Plenary%20Binders%202023-24/US_Plenary%20Binder_20231208.pdf\">last December</a> to add a third tier above senior lecturers for lecturer-rank faculty, “which will likely use the title of ‘Teaching Professor.’” “It is yet to be determined what these positions will offer faculty who apply for them,” Wallack wrote in an email to <i>The Eye</i> in September."
+          },
+          {
+            "type": "text",
+            "value": "Ben-Amor wrote in a separate email to <i>The Eye </i>in September that some lecturers “see [the resolution] as a step into the door for future improvements of their status and working conditions, and some see it as a symbolic move by the university that will not bring any improvements.”"
+          },
+          {
+            "type": "text",
+            "value": "When I spoke with Arabic lecturer Ouijdane Absi last November, we spent some time sifting through old emails and documents as I prodded her for details about which committee did what. Eventually, she admitted it was hard for her to remember all of them, given that she has been at Columbia for more than 15 years."
+          },
+          {
+            "type": "text",
+            "value": "“The best way to kill a thing is to design a committee,” Absi said, laughing. She boiled down her main issue with the lecturer status to a simple logic: “No tenure, no freedom of speech.”"
+          },
+          {
+            "type": "text",
+            "value": "<b>‘It’s because they can get away with it’: Columbia contingent faculty look to unionize</b>"
+          },
+          {
+            "type": "text",
+            "value": "At the beginning of this semester, after a summer away from campus, I saw some people near Low Library passing out leaflets. Their pitch, which built the case for contingent faculty unionization at Columbia, was the first time I had heard anyone talk about lecturers’ concerns out in public. Later, I perused their <a href=\"https://cfcu-uaw.org/\">website</a>, which showed the pictures and names of the faculty spearheading the effort to unionize all of Columbia’s non-tenure-track faculty, a group that mainly includes adjuncts—who teach on a limited-term contract—and lecturers."
+          },
+          {
+            "type": "text",
+            "value": "“With collective bargaining, we can negotiate a binding agreement so that Columbia University cannot change the terms of our employment without our consent,” the website states, highlighting non-tenure-track faculty’s “stagnant salaries, increasing amounts of uncompensated work, vanishing benefits, and threats to job security and academic freedom.”"
+          },
+          {
+            "type": "text",
+            "value": "Just a year ago, I myself had spent time investigating why Columbia’s non-tenure-track faculty hadn’t formed a union like those at <a href=\"https://www.insidehighered.com/news/quick-takes/2024/03/01/full-time-non-tenure-track-nyu-faculty-members-unionize\">New York University</a>, <a href=\"https://thefordhamram.com/news/university-seiu-agree-to-union-contracts-for-adjunct-faculty/\">Fordham University,</a> <a href=\"https://www.thecrimson.com/article/2024/5/23/labor-commencement-feature/\">Harvard University</a>, and others. It took me to the doorstep of Hindi-Urdu lecturer Timsal Masud’s office, a space shared between himself and two other lecturers."
+          },
+          {
+            "type": "text",
+            "value": "Masud came from a Hindi and Urdu lecturer position at the University of Chicago, where lecturers <a href=\"https://chicagomaroon.com/38678/news/faculty-forward-looks-to-build-on-a-history-of-success/\">unionized in 2015. </a>As Masud and other lecturers who have worked for other institutions explained, factors such as lower compensation, lack of academic freedom, and job insecurity are shared conditions among non-tenure-track positions across the country."
+          },
+          {
+            "type": "text",
+            "value": "Barnard’s contingent faculty unionized in 2015, though their union does not include lecturers. Siobhan Burke, adjunct faculty at Barnard and union organizer, told me earlier this spring that after the first contract in 2017, adjuncts at Barnard received double the pay per class taught, health insurance, and a fair grievance procedure. The minimum at Barnard for a three-credit course for an adjunct this fall is $12,500."
+          },
+          {
+            "type": "text",
+            "value": "Russell O’Rourke, GSAS ’20, a lecturer in the Columbia music department and union organizer, said that a survey last year of Columbia adjuncts and lecturers revealed that almost a third of adjunct respondents made less than $9,000 for a three-credit class."
+          },
+          {
+            "type": "text",
+            "value": "“So that gap just speaks for itself, but it also shows how much we have to gain,” O’Rourke said. “So [Barnard’s model], it’s a positive model. It makes me feel hopeful.”"
+          },
+          {
+            "type": "text",
+            "value": "These marked differences between Columbia and its peers, according to Masud, also include how his previous union supported lecturers by backing them during conflicts, allowing them to have more of a voice, and helping negotiate contracts."
+          },
+          {
+            "type": "text",
+            "value": "“It’s very hard for people to negotiate, especially if you are not aware how the system works,” Masud said. “It’s not easy. ‘Oh, you’re giving me a job, oh, I’m so thankful.’ How can I ask? So in that way, this union is very helpful to know what you deserve.”"
+          },
+          {
+            "type": "text",
+            "value": "At the University of Chicago, the first successful bargaining agreement between the union and the university in 2018 yielded a 49 percent pay increase for some instructors, paid parental leave, increased job stability, and “Professional Development Funds.”"
+          },
+          {
+            "type": "text",
+            "value": "An Arts and Sciences official wrote in a statement to <i>The Eye </i>that “during this year’s Columbia Giving Day, the dean of Humanities sent a special appeal for language instruction in an effort to secure additional funding for lecturer teaching and professional development.”"
+          },
+          {
+            "type": "text",
+            "value": "I asked Masud why he left the University of Chicago. He told me his wife was offered a tenure-track position in MESAAS at Columbia."
+          },
+          {
+            "type": "text",
+            "value": "When Ben-Amor found out Columbia did not have a union for lecturers, he was “shocked,” having been a member of a union at Tunis University in Tunisia, a country that he described as “much more oppressive.” He tried to start unionization conversations at Columbia early in his career in the ’90s. “But it didn’t work,” he told me, in part, due to a “fear type of culture.”"
+          },
+          {
+            "type": "text",
+            "value": "Some lecturers also told me that they were under the assumption that unionizing was not a legal option. Aviya said that when she joined Columbia as a lecturer, she had to sign an agreement with her department that she would not join a union."
+          },
+          {
+            "type": "text",
+            "value": "“I was so young—I was 25,” Aviya said. “Because it’s the first job that I ever got. And it’s in the States. These practices are also different from the ones in [a country in East Asia], so I didn’t really think too much of it. I signed everything.”"
+          },
+          {
+            "type": "text",
+            "value": "***"
+          },
+          {
+            "type": "text",
+            "value": "This fall, I spoke on video chat with five non-tenure-track faculty members spearheading their worker-led unionization effort. They told me many non-tenure-track faculty had been working hard on launching their efforts since 2020, having connected with the United Auto Workers labor union in fall 2021."
+          },
+          {
+            "type": "text",
+            "value": "Based on UAW’s data scrub, contingent faculty make up 67 percent of the teaching force at Columbia. To reach the minimum required to hold an election about creating a union, they determined they would need around 1,500 cards signed. During our interview, close to their initial public launch, they said they had several hundred card signers."
+          },
+          {
+            "type": "text",
+            "value": "Securing card signers is a slow process. Union organizers told me it requires a lot of face-to-face conversations that consider specific lecturers’ concerns and attempt to assuage the <a href=\"https://www.insidehighered.com/news/2017/06/09/instructor-who-says-she-brought-adjunct-union-barnard-no-longer-employed-there\">uncertainties</a> lecturers have about getting involved, which came up when I spoke to lecturers currently apprehensive about unionizing."
+          },
+          {
+            "type": "text",
+            "value": "I asked the same question I had been wondering for over a year now: Why are Columbia’s contingent faculty late to the union game? They then spoke of a few factors, including the difficulty of mobilizing the sheer number of contingent faculty that exists at Columbia, compounded by the high turnover rate of adjuncts."
+          },
+          {
+            "type": "text",
+            "value": "“It’s because they can get away with it,” adjunct faculty Tyler Rowland added more bluntly. “They are a corporation at the end of the day, one of the oldest corporations in New York City.” Afterward, he laughed and said he wouldn’t have a job in the spring after speaking so honestly with me. I sensed he was only half joking."
+          },
+          {
+            "type": "text",
+            "value": "Carolyn Cargile, a lecturer in the English department, also mentioned that lecturers at a “prestigious university” like Columbia might not feel like they can ask for better treatment “because they have had worse experiences at other institutions.”"
+          },
+          {
+            "type": "text",
+            "value": "“Their experiences at Columbia can feel like, because they feel so much better than terrible ones, more than the worst ones, they feel okay,” she said."
+          },
+          {
+            "type": "text",
+            "value": "Columbia is one of many institutions operating on the “adjunctification of labor and academia” model, according to Cargile. Poorer institutions argue that cutting costs is behind this hiring move. Cargile said, “[Columbia] still kind of lean[s] on that reasoning and rationale when it is … obviously weak,” given that Columbia is “one of the wealthiest institutions.”"
+          },
+          {
+            "type": "text",
+            "value": "Chemistry lecturer Chirstopher Eckdahl explained that a union is a “systemic solution for a systemic problem.”"
+          },
+          {
+            "type": "text",
+            "value": "“As long as the University is built the way it’s built, it will undervalue teaching faculty,” Eckdahl said. “It’s built to do that. And so we’re trying to build something that corrects for that institutional imbalance.”"
+          },
+          {
+            "type": "text",
+            "value": "Unlike the lecturer advisory committee and policy and planning committee, union organizers said a union has the “legal right” to negotiate with Columbia about their working conditions, instead of the University unilaterally deciding."
+          },
+          {
+            "type": "text",
+            "value": "Chemistry lecturer Talha Siddiqui reflected on why she chose to be part of the public-facing union effort, even after hearing concerned comments from her husband, who is in a union as an MTA: It would be hypocritical not to."
+          },
+          {
+            "type": "text",
+            "value": "Siddiqui asked herself, “If I can’t stand up for what I believe in, then how am I going to be any sort of role model for the students that I’m teaching?”"
+          },
+          {
+            "type": "text",
+            "value": "<b>‘You don’t talk about it, and things will never get better’</b>"
+          },
+          {
+            "type": "text",
+            "value": "Before we finished our interview in Spectator’s office, I asked Iris if there was anything to feel hopeful about."
+          },
+          {
+            "type": "text",
+            "value": "“We’re always inferior,” Iris said. “They’re always the professor, always superior. But think about it. … I do my research. I would not think my research is less important.”"
+          },
+          {
+            "type": "text",
+            "value": "She added, “I cannot really resolve it once and for all. But I just hope that at least that’s the general, that’s the direction we’re moving towards. We’re recognized as professionals.”"
+          },
+          {
+            "type": "text",
+            "value": "Tucked away in the corners of buildings like Kent Hall and Knox Hall, lecturers continually talked about their passion for teaching and the time spent developing their research and obtaining higher degrees, while also struggling to get pedagogical leave or adequate funding."
+          },
+          {
+            "type": "text",
+            "value": "Rakesh Ranjan, senior lecturer and coordinator of the Hindi-Urdu program, spent an hour last November walking me through <a href=\"http://hindistartalk.lrc.columbia.edu/\">Hindi </a>and <a href=\"http://urduaiis.lrc.columbia.edu/\">Urdu</a> language learning modules that he designed by applying for grants piecemeal, with the aim of making free, high-quality language resources available to the public. He said he spent his own money on the pilot project. Turkish senior lecturer Zuleyha Fikret and Turkish lecturer Dilek Oztoprak spoke to me about how they personalized Ottoman Turkish classes to suit the needs of students writing research papers."
+          },
+          {
+            "type": "text",
+            "value": "I wanted to ask more about what that personalized <a href=\"https://deepeducationpress.org/help-them-learn.html\">“deep approach”</a> entailed. But Oztoprak politely informed me that she had to dash: Her other lecturer job at Rutgers University in New Jersey was waiting for her."
+          },
+          {
+            "type": "text",
+            "value": "I was curious why Iris, compared to all of my off-the-record interviews and emails that never received responses, came all the way to Spectator’s office, drenched by the rain, to give me her unfiltered experience."
+          },
+          {
+            "type": "text",
+            "value": "If the situation for her felt “hopeless” at times, if she had once been on the verge of “quitting,” if she felt deep-seated fears of retaliation, and if the future did not always promise real improvement, was there a reason to risk speaking to me at all?"
+          },
+          {
+            "type": "text",
+            "value": "“Lecturers have to band together,” Iris said. “You never ask, you never make yourself heard, right? You don’t talk about it, and things will never get better. You want something, you have to do it yourself.”"
+          },
+          {
+            "type": "text",
+            "value": "Eye <i>Section Head Ann Vettikkal can be contacted at </i><a href=\"mailto:ann.vettikkal@columbiaspectator.com\"><i>ann.vettikkal@columbiaspectator.com</i></a><i>.</i>"
+          },
+          {
+            "type": "text",
+            "value": "<i>Senior Graphics Reporter Wilson Zhen can be contacted at </i><a href=\"mailto:wilson.zhen@columbiaspectator.com\"><i>wilson.zhen@columbiaspectator.com</i></a><i>.</i>"
+          },
+          {
+            "type": "text",
+            "value": "<i>Deputy Graphics Editor Ayaan Ali can be contacted at </i><a href=\"mailto:ayaan.ali@columbiaspectator.com\"><i>ayaan.ali@columbiaspectator.com</i></a><i>. </i>"
+          },
+          {
+            "type": "text",
+            "value": "<i>Edited by Caelan Bailey, CC ‘24,  during the 2023-2024 academic year, </i>Eye<i> Section Head Haniya Cheema, and </i>Eye<i> Staff Writers Symmes Cannon and Claire Burke.</i>"
+          },
+          {
+            "type": "text",
+            "value": "<i>Copy edited by Deputy Copy Editor Sally Kaye, Senior Associate Copy Editor Diego Carvajal Núñez, Associate Copy Editors Nerea Wolfenzon and Megha Parikh, and Preslotters Ames Yu, Sara Ademi, and Georgia Bryan. </i>"
+          },
+          {
+            "type": "text",
+            "value": "<b><i>Want to keep up with The Eye? Subscribe to our </i></b><a href=\"https://columbiaspectator.us4.list-manage.com/subscribe?u=a3d2eeb1ae5560ca04f82f042&id=e51c51d62d\"><b><i>email newsletter </i></b></a><b><i>and follow us on Instagram </i></b><a href=\"https://www.instagram.com/theeye.mag/\"><b><i>@theeye.mag</i></b></a><b><i>.</i></b>"
           }
         ],
-        "headline": "The U.S. and Ivy League schools were late to respond to COVID-19.",
-        "date": "October 17, 2019",
-        "byline": "By <a href=\"https://www.columbiaspectator.com/contributors/Charlotte-Li\">Charlotte Li</a>\nEdited by <a href=\"https://www.columbiaspectator.com/contributors/Jun-Yi-Zhang\">Jun Yi Zhang</a>",
-        "USE_NEWS_NAV": true,
-        "USE_EYE_NAV": false,
-        "USE_COVER_HED": false,
+        "headline": "Columbia Relies on Lecturers More Than Ever Before. Their Grievances are Reaching a Breaking Point.",
+        "date": "October 19, 2024",
+        "byline": "By <a href=\"https://www.columbiaspectator.com/contributors/ann-vettikkal/\">Ann Vettikkal</a>. Graphics by <a href=\"https://www.columbiaspectator.com/contributors/wilson-zhen/\">Wilson Zhen</a> and <a href=\"https://www.columbiaspectator.com/contributors/ayaan-ali/\">Ayaan Ali</a>",
+        "cover_asset": "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/YXIZUK2I5NCSZFZTX5OWET27RQ.png",
+        "cover_caption": "Macy Sinreich / Deputy Illustrations Editor",
+        "USE_NEWS_NAV": false,
+        "USE_EYE_NAV": true,
+        "USE_COVER_HED": true,
         "IS_EMBED": false,
         "DOC_URL": "https://docs.google.com/document/d/13UqHkRBHDjAP9JNfjIVtvBBpbARxO4FxcCCsa7tcCRM/edit?tab=t.0"
       }

@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: Roboto, arial, helvetica, sans-serif;
+    }
+
+    #scrolly {
+      position: relative;
+      padding: 1rem;
+    }
+
+    .scrolly-overlay {
+      position: relative;
+      padding: 0;
+      max-width: 35rem;
+      margin: 0 auto;
+    }
+
+    .sticky-thing {
+      position: -webkit-sticky;
+      position: sticky;
+      left: 0;
+      width: 100%;
+      margin: 0;
+      z-index: 0;
+      top: 12.5vh;
+      height: 75vh;
+      padding-bottom: 7vh;
+      /* Center everything inside */
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .step {
+      margin: 0 auto 2rem auto;
+      margin-bottom: 25rem;
+
+    }
+
+    .step p {
+      text-align: center;
+      padding: 1rem;
+      font-size: 1.25rem;
+    }
+
+    .hidden {
+      visibility: hidden;
+    }
+
+    .fade-in {
+        transition: fill 0.5s ease-in-out;
+        /* Transition for 1 second on the fill property */
+    }
+
+    /* When it's less than 700 pixels wide, do normal scrollytelling */
+    @media only screen and (min-width: 700px) {
+      #scrolly.side-by-side {
+        display: flex;
+      }
+
+      #scrolly.side-by-side>div {
+        flex-basis: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
+        padding: 0.75em;
+      }
+
+      #scrolly.side-by-side .scrolly-overlay {
+        margin-top: 70vh;
+        order: 0;
+        /* Change these to adjust sizing options */
+        min-width: 15rem;
+        max-width: 20rem;
+      }
+
+      #scrolly.side-by-side .sticky-thing {
+        order: 1;
+        flex-grow: 2;
+      }
+
+      .hidden {
+        visibility: hidden;
+      }
+
+      .fade-in {
+        transition: fill 0.5s ease-in-out;
+        /* Transition for 1 second on the fill property */
+      }
+
+    }
+  </style>
+  <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.0.4/scrollama.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.3.0/d3.min.js"></script>
+
+</head>
+
+<body>
+  <section id="scrolly">
+    <div class="sticky-thing">
+      <div class="ai2html-container">
+        <include src="lecturer_waffle.html"></include>  
+      </div>
+    </div>
+
+    <div class="scrolly-overlay">
+      <div class="step" id="step-zero">
+        <p></p>
+      </div>
+      <div class="step" id="step-one">
+        <p></p>
+      </div>
+      <div class="step" id="step-two">
+        <p></p>
+      </div>
+      <div class="step" id="step-three">
+        <p></p>
+      </div>
+      <div class="step" id="step-four">
+        <p></p>
+      </div>
+      <div class="step" id="step-five">
+        <p></p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+
+    /* Scrollytelling code goes under here */
+    // step 0: 
+
+    // Initially hide all numbers
+    d3.select("#g-ai0-3").classed('hidden', true);
+    d3.select("#g-ai0-4").classed('hidden', true);
+    d3.select("#g-ai0-5").classed('hidden', true);
+    d3.select("#g-ai0-6").classed('hidden', true);
+    d3.select("#g-ai0-7").classed('hidden', true);
+
+    d3.select("#g-ai0-9").classed('hidden', true);
+    d3.select("#g-ai0-10").classed('hidden', true);
+    d3.select("#g-ai0-12").classed('hidden', true);
+    d3.select("#g-ai0-13").classed('hidden', true);
+    d3.select("#g-ai0-14").classed('hidden', true);
+
+    d3.select("#g-ai0-19").classed('hidden', true);
+    d3.select("#g-ai0-20").classed('hidden', true);
+    d3.select("#g-ai0-21").classed('hidden', true);
+    d3.select("#g-ai0-22").classed('hidden', true);
+    d3.select("#g-ai0-23").classed('hidden', true);
+
+    d3.select("#g-ai0-27").classed('hidden', true);
+    d3.select("#g-ai0-28").classed('hidden', true);
+    d3.select("#g-ai0-29").classed('hidden', true);
+    d3.select("#g-ai0-30").classed('hidden', true);
+    d3.select("#g-ai0-31").classed('hidden', true);
+
+    // hide tablet numbers
+    d3.select("#g-ai1-8").classed('hidden', true);
+    d3.select("#g-ai1-4").classed('hidden', true);
+    d3.select("#g-ai1-5").classed('hidden', true);
+    d3.select("#g-ai1-6").classed('hidden', true);
+    d3.select("#g-ai1-7").classed('hidden', true);
+
+    d3.select("#g-ai1-15").classed('hidden', true);
+    d3.select("#g-ai1-10").classed('hidden', true);
+    d3.select("#g-ai1-11").classed('hidden', true);
+    d3.select("#g-ai1-13").classed('hidden', true);
+    d3.select("#g-ai1-14").classed('hidden', true);
+
+    d3.select("#g-ai1-24").classed('hidden', true);
+    d3.select("#g-ai1-20").classed('hidden', true);
+    d3.select("#g-ai1-21").classed('hidden', true);
+    d3.select("#g-ai1-22").classed('hidden', true);
+    d3.select("#g-ai1-23").classed('hidden', true);
+
+    d3.select("#g-ai1-27").classed('hidden', true);
+    d3.select("#g-ai1-28").classed('hidden', true);
+    d3.select("#g-ai1-29").classed('hidden', true);
+    d3.select("#g-ai1-30").classed('hidden', true);
+    d3.select("#g-ai1-31").classed('hidden', true);
+
+    // hide phone numbers
+    d3.select("#g-ai2-8").classed('hidden', true);
+    d3.select("#g-ai2-4").classed('hidden', true);
+    d3.select("#g-ai2-5").classed('hidden', true);
+    d3.select("#g-ai2-6").classed('hidden', true);
+    d3.select("#g-ai2-7").classed('hidden', true);
+
+    d3.select("#g-ai2-9").classed('hidden', true);
+    d3.select("#g-ai2-11").classed('hidden', true);
+    d3.select("#g-ai2-15").classed('hidden', true);
+    d3.select("#g-ai2-13").classed('hidden', true);
+    d3.select("#g-ai2-14").classed('hidden', true);
+
+    d3.select("#g-ai2-19").classed('hidden', true);
+    d3.select("#g-ai2-20").classed('hidden', true);
+    d3.select("#g-ai2-21").classed('hidden', true);
+    d3.select("#g-ai2-22").classed('hidden', true);
+    d3.select("#g-ai2-18").classed('hidden', true);
+
+    d3.select("#g-ai2-27").classed('hidden', true);
+    d3.select("#g-ai2-28").classed('hidden', true);
+    d3.select("#g-ai2-29").classed('hidden', true);
+    d3.select("#g-ai2-25").classed('hidden', true);
+    d3.select("#g-ai2-26").classed('hidden', true);
+
+    // Step-in: When a section is scrolled into
+    d3.select("#step-zero").on('stepin', function (e) {
+      console.log("Got to step zero");
+      d3.select("#g-ai0-8").classed('hidden', true);
+      d3.select("#g-ai0-11").classed('hidden', true);
+      d3.select("#g-ai0-18").classed('hidden', true);
+      d3.select("#g-ai0-26").classed('hidden', true);
+
+      d3.select("#g-ai0-7").classed('hidden', false);
+      d3.select("#g-ai0-14").classed('hidden', false);
+      d3.select("#g-ai0-23").classed('hidden', false);
+      d3.select("#g-ai0-27").classed('hidden', false);
+
+      d3.select("#change2019-back2021 path")
+        .classed("fade-in", true)
+        .style("fill", "#f3722c");
+
+      // tablet
+      d3.select("#g-ai1-3").classed('hidden', true);
+      d3.select("#g-ai1-12").classed('hidden', true);
+      d3.select("#g-ai1-25").classed('hidden', true);
+      d3.select("#g-ai1-26").classed('hidden', true);
+
+      d3.select("#g-ai1-8").classed('hidden', false);
+      d3.select("#g-ai1-15").classed('hidden', false);
+      d3.select("#g-ai1-23").classed('hidden', false);
+      d3.select("#g-ai1-28").classed('hidden', false);
+
+      d3.select("#ichange2019-back2021 path")
+        .classed("fade-in", true)
+        .style("fill", "#f3722c");
+
+      // phone
+      d3.select("#g-ai2-3").classed('hidden', true);
+      d3.select("#g-ai2-12").classed('hidden', true);
+      d3.select("#g-ai2-23").classed('hidden', true);
+      d3.select("#g-ai2-30").classed('hidden', true);
+
+      d3.select("#g-ai2-4").classed('hidden', false);
+      d3.select("#g-ai2-15").classed('hidden', false);
+      d3.select("#g-ai2-18").classed('hidden', false);
+      d3.select("#g-ai2-28").classed('hidden', false);
+
+      d3.select("#pchange2019-back2021 path")
+        .classed("fade-in", true)
+        .style("fill", "#f3722c");
+
+    });
+
+    d3.select("#step-one").on('stepin', function (e) {
+      console.log("Got to step one");
+      d3.select("#g-ai0-7").classed('hidden', true);
+      d3.select("#g-ai0-14").classed('hidden', true);
+      d3.select("#g-ai0-23").classed('hidden', true);
+      d3.select("#g-ai0-27").classed('hidden', true);
+
+      d3.select("#g-ai0-12").classed('hidden', false);
+      d3.select("#g-ai0-3").classed('hidden', false);
+      d3.select("#g-ai0-19").classed('hidden', false);
+      d3.select("#g-ai0-30").classed('hidden', false);
+
+      d3.select("#g-ai1-8").classed('hidden', true);
+      d3.select("#g-ai1-15").classed('hidden', true);
+      d3.select("#g-ai1-23").classed('hidden', true);
+      d3.select("#g-ai1-28").classed('hidden', true);
+
+      d3.select("#g-ai1-6").classed('hidden', false);
+      d3.select("#g-ai1-13").classed('hidden', false);
+      d3.select("#g-ai1-21").classed('hidden', false);
+      d3.select("#g-ai1-29").classed('hidden', false);
+
+      d3.select("#g-ai2-4").classed('hidden', true);
+      d3.select("#g-ai2-15").classed('hidden', true);
+      d3.select("#g-ai2-18").classed('hidden', true);
+      d3.select("#g-ai2-28").classed('hidden', true);
+
+      d3.select("#g-ai2-7").classed('hidden', false);
+      d3.select("#g-ai2-13").classed('hidden', false);
+      d3.select("#g-ai2-21").classed('hidden', false);
+      d3.select("#g-ai2-25").classed('hidden', false);
+    });
+
+    d3.select("#step-two").on('stepin', function (e) {
+      d3.select("#g-ai0-3").classed('hidden', true);
+      d3.select("#g-ai0-12").classed('hidden', true);
+      d3.select("#g-ai0-19").classed('hidden', true);
+      d3.select("#g-ai0-30").classed('hidden', true);
+
+      d3.select("#g-ai0-4").classed('hidden', false);
+      d3.select("#g-ai0-13").classed('hidden', false);
+      d3.select("#g-ai0-20").classed('hidden', false);
+      d3.select("#g-ai0-29").classed('hidden', false);
+
+      d3.select("#change2019-back2021 path")
+        .classed("fade-in", true)
+        .style("fill", "#005f73");
+
+      d3.select("#g-ai1-6").classed('hidden', true);
+      d3.select("#g-ai1-13").classed('hidden', true);
+      d3.select("#g-ai1-21").classed('hidden', true);
+      d3.select("#g-ai1-29").classed('hidden', true);
+
+      d3.select("#g-ai1-4").classed('hidden', false);
+      d3.select("#g-ai1-14").classed('hidden', false);
+      d3.select("#g-ai1-20").classed('hidden', false);
+      d3.select("#g-ai1-27").classed('hidden', false);
+
+      d3.select("#ichange2019-back2021 path")
+        .classed("fade-in", true)
+        .style("fill", "#005f73");
+
+      d3.select("#g-ai2-7").classed('hidden', true);
+      d3.select("#g-ai2-13").classed('hidden', true);
+      d3.select("#g-ai2-21").classed('hidden', true);
+      d3.select("#g-ai2-25").classed('hidden', true);
+
+      d3.select("#g-ai2-8").classed('hidden', false);
+      d3.select("#g-ai2-14").classed('hidden', false);
+      d3.select("#g-ai2-19").classed('hidden', false);
+      d3.select("#g-ai2-27").classed('hidden', false);
+
+      d3.select("#pchange2019-back2021 path")
+        .classed("fade-in", true)
+        .style("fill", "#005f73");
+    });
+
+    d3.select("#step-three").on('stepin', function (e) {
+      d3.select("#g-ai0-4").classed('hidden', true);
+      d3.select("#g-ai0-13").classed('hidden', true);
+      d3.select("#g-ai0-20").classed('hidden', true);
+      d3.select("#g-ai0-29").classed('hidden', true);
+
+      d3.select("#g-ai0-5").classed('hidden', false);
+      d3.select("#g-ai0-9").classed('hidden', false);
+      d3.select("#g-ai0-21").classed('hidden', false);
+      d3.select("#g-ai0-31").classed('hidden', false);
+
+      d3.select("#change2019-back2021 path")
+        .classed("fade-in", true)
+        .style("fill", "#f3722c");
+
+      d3.select("#change-2022 path")
+        .classed("fade-in", true)
+        .style("fill", "#f3722c");
+
+      d3.select("#g-ai1-4").classed('hidden', true);
+      d3.select("#g-ai1-14").classed('hidden', true);
+      d3.select("#g-ai1-20").classed('hidden', true);
+      d3.select("#g-ai1-27").classed('hidden', true);
+
+      d3.select("#g-ai1-7").classed('hidden', false);
+      d3.select("#g-ai1-10").classed('hidden', false);
+      d3.select("#g-ai1-24").classed('hidden', false);
+      d3.select("#g-ai1-30").classed('hidden', false);
+
+      d3.select("#ichange2019-back2021 path")
+        .classed("fade-in", true)
+        .style("fill", "#f3722c");
+
+      d3.select("#ichange-2022 path")
+        .classed("fade-in", true)
+        .style("fill", "#f3722c");
+
+      d3.select("#g-ai2-8").classed('hidden', true);
+      d3.select("#g-ai2-14").classed('hidden', true);
+      d3.select("#g-ai2-19").classed('hidden', true);
+      d3.select("#g-ai2-27").classed('hidden', true);
+
+      d3.select("#g-ai2-6").classed('hidden', false);
+      d3.select("#g-ai2-9").classed('hidden', false);
+      d3.select("#g-ai2-22").classed('hidden', false);
+      d3.select("#g-ai2-26").classed('hidden', false);
+
+      d3.select("#pchange2019-back2021 path")
+        .classed("fade-in", true)
+        .style("fill", "#f3722c");
+
+      d3.select("#pchange-2022 path")
+        .classed("fade-in", true)
+        .style("fill", "#f3722c");
+
+    });
+
+    d3.select("#step-four").on('stepin', function (e) {
+      d3.select("#g-ai0-5").classed('hidden', true);
+      d3.select("#g-ai0-9").classed('hidden', true);
+      d3.select("#g-ai0-21").classed('hidden', true);
+      d3.select("#g-ai0-31").classed('hidden', true);
+
+      d3.select("#g-ai0-6").classed('hidden', false);
+      d3.select("#g-ai0-10").classed('hidden', false);
+      d3.select("#g-ai0-22").classed('hidden', false);
+      d3.select("#g-ai0-28").classed('hidden', false);
+
+      d3.select("#change_2023 path")
+        .classed("fade-in", true)
+        .style("fill", "#f3722c");
+
+      d3.select("#g-ai1-7").classed('hidden', true);
+      d3.select("#g-ai1-10").classed('hidden', true);
+      d3.select("#g-ai1-24").classed('hidden', true);
+      d3.select("#g-ai1-30").classed('hidden', true);
+
+      d3.select("#g-ai1-5").classed('hidden', false);
+      d3.select("#g-ai1-11").classed('hidden', false);
+      d3.select("#g-ai1-22").classed('hidden', false);
+      d3.select("#g-ai1-31").classed('hidden', false);
+
+      d3.select("#ichange_2023 path")
+        .classed("fade-in", true)
+        .style("fill", "#f3722c");
+
+      d3.select("#g-ai2-6").classed('hidden', true);
+      d3.select("#g-ai2-9").classed('hidden', true);
+      d3.select("#g-ai2-22").classed('hidden', true);
+      d3.select("#g-ai2-26").classed('hidden', true);
+
+      d3.select("#g-ai2-5").classed('hidden', false);
+      d3.select("#g-ai2-11").classed('hidden', false);
+      d3.select("#g-ai2-20").classed('hidden', false);
+      d3.select("#g-ai2-29").classed('hidden', false);
+
+      d3.select("#pchange_2023 path")
+        .classed("fade-in", true)
+        .style("fill", "#f3722c");
+
+
+    });
+
+    // Step-out: When a section is scrolled out of (triggered when scrolling back up)
+    d3.select("#step-zero").on('stepout', function (e) {
+      if (e.detail.direction === 'up') {
+        // 1200 px
+        d3.select("#g-ai0-8").classed('hidden', false);
+        d3.select("#g-ai0-11").classed('hidden', false);
+        d3.select("#g-ai0-18").classed('hidden', false);
+        d3.select("#g-ai0-26").classed('hidden', false);
+
+        d3.select("#g-ai0-7").classed('hidden', true);
+        d3.select("#g-ai0-14").classed('hidden', true);
+        d3.select("#g-ai0-23").classed('hidden', true);
+        d3.select("#g-ai0-27").classed('hidden', true);
+
+        d3.select("#change2019-back2021 path")
+          .classed("fade-in", true)
+          .style("fill", "#005f73");
+
+        // 600 px
+        d3.select("#g-ai1-3").classed('hidden', false);
+        d3.select("#g-ai1-12").classed('hidden', false);
+        d3.select("#g-ai1-25").classed('hidden', false);
+        d3.select("#g-ai1-26").classed('hidden', false);
+
+        d3.select("#g-ai1-8").classed('hidden', true);
+        d3.select("#g-ai1-15").classed('hidden', true);
+        d3.select("#g-ai1-23").classed('hidden', true);
+        d3.select("#g-ai1-28").classed('hidden', true);
+
+        d3.select("#ichange2019-back2021 path")
+          .classed("fade-in", true)
+          .style("fill", "#005f73");
+
+        // 300 px
+        d3.select("#g-ai2-3").classed('hidden', false);
+        d3.select("#g-ai2-12").classed('hidden', false);
+        d3.select("#g-ai2-23").classed('hidden', false);
+        d3.select("#g-ai2-30").classed('hidden', false);
+
+        d3.select("#g-ai2-4").classed('hidden', true);
+        d3.select("#g-ai2-15").classed('hidden', true);
+        d3.select("#g-ai2-18").classed('hidden', true);
+        d3.select("#g-ai2-28").classed('hidden', true);
+
+        d3.select("#pchange2019-back2021 path")
+          .classed("fade-in", true)
+          .style("fill", "#005f73");
+      }
+    });
+
+    d3.select("#step-one").on('stepout', function (e) {
+      if (e.detail.direction === 'up') {
+        d3.select("#g-ai0-7").classed('hidden', false);
+        d3.select("#g-ai0-14").classed('hidden', false);
+        d3.select("#g-ai0-23").classed('hidden', false);
+        d3.select("#g-ai0-27").classed('hidden', false);
+
+        d3.select("#g-ai0-12").classed('hidden', true);
+        d3.select("#g-ai0-3").classed('hidden', true);
+        d3.select("#g-ai0-19").classed('hidden', true);
+        d3.select("#g-ai0-30").classed('hidden', true);
+
+
+        d3.select("#g-ai1-8").classed('hidden', false);
+        d3.select("#g-ai1-15").classed('hidden', false);
+        d3.select("#g-ai1-23").classed('hidden', false);
+        d3.select("#g-ai1-28").classed('hidden', false);
+
+        d3.select("#g-ai1-6").classed('hidden', true);
+        d3.select("#g-ai1-13").classed('hidden', true);
+        d3.select("#g-ai1-21").classed('hidden', true);
+        d3.select("#g-ai1-29").classed('hidden', true);
+
+        d3.select("#g-ai2-4").classed('hidden', false);
+        d3.select("#g-ai2-15").classed('hidden', false);
+        d3.select("#g-ai2-18").classed('hidden', false);
+        d3.select("#g-ai2-28").classed('hidden', false);
+
+        d3.select("#g-ai2-7").classed('hidden', true);
+        d3.select("#g-ai2-13").classed('hidden', true);
+        d3.select("#g-ai2-21").classed('hidden', true);
+        d3.select("#g-ai2-25").classed('hidden', true);
+
+      }
+    });
+
+    d3.select("#step-two").on('stepout', function (e) {
+      if (e.detail.direction === 'up') {
+        d3.select("#g-ai0-3").classed('hidden', false);
+        d3.select("#g-ai0-12").classed('hidden', false);
+        d3.select("#g-ai0-19").classed('hidden', false);
+        d3.select("#g-ai0-30").classed('hidden', false);
+
+        d3.select("#g-ai0-4").classed('hidden', true);
+        d3.select("#g-ai0-13").classed('hidden', true);
+        d3.select("#g-ai0-20").classed('hidden', true);
+        d3.select("#g-ai0-29").classed('hidden', true);
+
+        d3.select("#change2019-back2021 path")
+          .classed("fade-in", true)
+          .style("fill", "#f3722c");
+
+
+        d3.select("#ichange2019-back2021 path")
+          .classed("fade-in", true)
+          .style("fill", "#005f73");
+
+
+        d3.select("#pchange2019-back2021 path")
+          .classed("fade-in", true)
+          .style("fill", "#005f73");
+
+
+        d3.select("#g-ai1-6").classed('hidden', false);
+        d3.select("#g-ai1-13").classed('hidden', false);
+        d3.select("#g-ai1-21").classed('hidden', false);
+        d3.select("#g-ai1-29").classed('hidden', false);
+
+        d3.select("#g-ai1-4").classed('hidden', true);
+        d3.select("#g-ai1-14").classed('hidden', true);
+        d3.select("#g-ai1-20").classed('hidden', true);
+        d3.select("#g-ai1-27").classed('hidden', true);
+
+        d3.select("#g-ai2-7").classed('hidden', false);
+        d3.select("#g-ai2-13").classed('hidden', false);
+        d3.select("#g-ai2-21").classed('hidden', false);
+        d3.select("#g-ai2-25").classed('hidden', false);
+
+        d3.select("#g-ai2-8").classed('hidden', true);
+        d3.select("#g-ai2-14").classed('hidden', true);
+        d3.select("#g-ai2-19").classed('hidden', true);
+        d3.select("#g-ai2-27").classed('hidden', true);
+
+      }
+    });
+
+    d3.select("#step-three").on('stepout', function (e) {
+      if (e.detail.direction === 'up') {
+        d3.select("#g-ai0-4").classed('hidden', false);
+        d3.select("#g-ai0-13").classed('hidden', false);
+        d3.select("#g-ai0-20").classed('hidden', false);
+        d3.select("#g-ai0-29").classed('hidden', false);
+
+        d3.select("#g-ai0-5").classed('hidden', true);
+        d3.select("#g-ai0-9").classed('hidden', true);
+        d3.select("#g-ai0-21").classed('hidden', true);
+        d3.select("#g-ai0-31").classed('hidden', true);
+
+        d3.select("#change2019-back2021 path")
+          .classed("fade-in", true)
+          .style("fill", "#005f73");
+
+        d3.select("#change-2022 path")
+          .classed("fade-in", true)
+          .style("fill", "#005f73");
+
+
+        d3.select("#ichange2019-back2021 path")
+          .classed("fade-in", true)
+          .style("fill", "#005f73");
+
+        d3.select("#ichange-2022 path")
+          .classed("fade-in", true)
+          .style("fill", "#005f73");
+
+
+        d3.select("#pchange2019-back2021 path")
+          .classed("fade-in", true)
+          .style("fill", "#005f73");
+
+        d3.select("#pchange-2022 path")
+          .classed("fade-in", true)
+          .style("fill", "#005f73");
+
+        d3.select("#g-ai1-4").classed('hidden', false);
+        d3.select("#g-ai1-14").classed('hidden', false);
+        d3.select("#g-ai1-20").classed('hidden', false);
+        d3.select("#g-ai1-27").classed('hidden', false);
+
+        d3.select("#g-ai1-7").classed('hidden', true);
+        d3.select("#g-ai1-10").classed('hidden', true);
+        d3.select("#g-ai1-24").classed('hidden', true);
+        d3.select("#g-ai1-30").classed('hidden', true);
+
+        d3.select("#g-ai2-8").classed('hidden', false);
+        d3.select("#g-ai2-14").classed('hidden', false);
+        d3.select("#g-ai2-19").classed('hidden', false);
+        d3.select("#g-ai2-27").classed('hidden', false);
+
+        d3.select("#g-ai2-6").classed('hidden', true);
+        d3.select("#g-ai2-9").classed('hidden', true);
+        d3.select("#g-ai2-22").classed('hidden', true);
+        d3.select("#g-ai2-26").classed('hidden', true);
+      }
+    });
+
+    d3.select("#step-four").on('stepout', function (e) {
+      if (e.detail.direction === 'up') {
+        d3.select("#g-ai0-5").classed('hidden', false);
+        d3.select("#g-ai0-9").classed('hidden', false);
+        d3.select("#g-ai0-21").classed('hidden', false);
+        d3.select("#g-ai0-31").classed('hidden', false);
+
+        d3.select("#g-ai0-6").classed('hidden', true);
+        d3.select("#g-ai0-10").classed('hidden', true);
+        d3.select("#g-ai0-22").classed('hidden', true);
+        d3.select("#g-ai0-28").classed('hidden', true);
+
+        d3.select("#change_2023 path")
+          .classed("fade-in", true)
+          .style("fill", "#005f73");
+
+
+        d3.select("#ichange_2023 path")
+          .classed("fade-in", true)
+          .style("fill", "#005f73");
+
+
+        d3.select("#pchange_2023 path")
+          .classed("fade-in", true)
+          .style("fill", "#005f73");
+
+
+        d3.select("#g-ai1-7").classed('hidden', false);
+        d3.select("#g-ai1-10").classed('hidden', false);
+        d3.select("#g-ai1-24").classed('hidden', false);
+        d3.select("#g-ai1-30").classed('hidden', false);
+
+        d3.select("#g-ai1-5").classed('hidden', true);
+        d3.select("#g-ai1-11").classed('hidden', true);
+        d3.select("#g-ai1-22").classed('hidden', true);
+        d3.select("#g-ai1-31").classed('hidden', true);
+
+        d3.select("#g-ai2-6").classed('hidden', false);
+        d3.select("#g-ai2-9").classed('hidden', false);
+        d3.select("#g-ai2-22").classed('hidden', false);
+        d3.select("#g-ai2-26").classed('hidden', false);
+
+        d3.select("#g-ai2-5").classed('hidden', true);
+        d3.select("#g-ai2-11").classed('hidden', true);
+        d3.select("#g-ai2-20").classed('hidden', true);
+        d3.select("#g-ai2-29").classed('hidden', true);
+      }
+    });
+  </script>
+
+  <script>
+    const scroller = scrollama();
+
+    scroller
+      .setup({
+        step: "#scrolly .scrolly-overlay .step",
+        offset: 0.5,
+        debug: false
+      })
+      .onStepEnter(function ({ element, index, direction }) {
+        const event = new CustomEvent('stepin', { detail: { direction: direction } })
+        element.dispatchEvent(event);
+      })
+      .onStepExit(function ({ element, index, direction }) {
+        const event = new CustomEvent('stepout', { detail: { direction: direction } })
+        element.dispatchEvent(event);
+      });
+
+    window.addEventListener("resize", scroller.resize);
+  </script>
+
+  <script>
+    // Variables to control scroll speed and easing
+    let scrollPosition = 0;
+    let scrollTarget = 0;
+    let easeFactor = 0.2; // This controls the "smoothness" or delay
+
+    // Event listener for mouse wheel (desktop scroll)
+    window.addEventListener('wheel', function (event) {
+      event.preventDefault(); // Prevent default scroll behavior
+      scrollTarget += event.deltaY * 0.5; // Adjust this factor to change scroll speed
+    }, { passive: false });
+
+    // Throttle function to limit how often resizer is called
+    function throttle(func, limit) {
+      let lastFunc, lastRan;
+      return function () {
+        const context = this, args = arguments;
+        if (!lastRan) {
+          func.apply(context, args);
+          lastRan = Date.now();
+        } else {
+          clearTimeout(lastFunc);
+          lastFunc = setTimeout(function () {
+            if ((Date.now() - lastRan) >= limit) {
+              func.apply(context, args);
+              lastRan = Date.now();
+            }
+          }, limit - (Date.now() - lastRan));
+        }
+      };
+    }
+
+    // Function to update scroll position with easing and call resizer
+    function updateScroll() {
+      scrollPosition += (scrollTarget - scrollPosition) * easeFactor;
+      window.scrollTo(0, scrollPosition); // Scroll manually
+
+      // Throttled resizer call
+      throttledResizer();
+
+      requestAnimationFrame(updateScroll); // Keep updating
+    }
+
+    // Resizer function for dynamic layout adjustments
+    function resizer() {
+      var elements = Array.prototype.slice.call(document.querySelectorAll(".g-artboard[data-min-width]")),
+        widthById = {};
+      elements.forEach(function (el) {
+        var parent = el.parentNode,
+          width = widthById[parent.id] || parent.getBoundingClientRect().width,
+          minwidth = el.getAttribute("data-min-width"),
+          maxwidth = el.getAttribute("data-max-width");
+        widthById[parent.id] = width;
+
+        if (+minwidth <= width && (+maxwidth >= width || maxwidth === null)) {
+          el.style.display = "block";
+        } else {
+          el.style.display = "none";
+        }
+      });
+    }
+
+    // Throttled resizer for performance
+    const throttledResizer = throttle(resizer, 100);
+
+    // Ensure resizer is called on window resize
+    window.addEventListener('resize', function () {
+      throttledResizer();
+    });
+
+    // Start the manual scroll animation
+    updateScroll();
+  </script>
+
+
+</body>
+
+</html>
