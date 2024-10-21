@@ -647,6 +647,8 @@ function init() {
 let scrollTarget = 0;
 let easeFactor = 0.2; // This controls the "smoothness" or delay
 let startY = 0; // For touch scrolling
+let scrollSpeedDesktop = 0.5; // Scroll speed factor for desktop
+let scrollSpeedMobile = 2.0; // Increased scroll speed factor for mobile
 
 // Function to update scroll position with easing and call resizer
 function updateScroll() {
@@ -706,7 +708,7 @@ if (!('ontouchstart' in window || navigator.maxTouchPoints)) {
     // Event listener for mouse wheel (desktop scroll)
     window.addEventListener('wheel', function (event) {
         event.preventDefault(); // Prevent default scroll behavior on desktop
-        scrollTarget += event.deltaY * 0.5; // Adjust this factor to change scroll speed
+        scrollTarget += event.deltaY * scrollSpeedDesktop; // Adjust this factor to change scroll speed
     }, { passive: false });
 } else {
     // Touch event handling for mobile
@@ -717,7 +719,7 @@ if (!('ontouchstart' in window || navigator.maxTouchPoints)) {
     window.addEventListener('touchmove', function (event) {
         event.preventDefault(); // Prevent native scroll on mobile
         let touchY = event.touches[0].pageY;
-        scrollTarget += (startY - touchY) * 0.5; // Adjust for smooth scrolling
+        scrollTarget += (startY - touchY) * scrollSpeedMobile; // Increased scroll speed for mobile
         startY = touchY; // Update start position for next move
     }, { passive: false });
 }
