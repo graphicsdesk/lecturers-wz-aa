@@ -571,7 +571,7 @@ function init() {
         }
 
     });
-    
+
     (function () {
         // only want one resizer on the page
         if (document.documentElement.className.indexOf("g-resizer-v3-init") > -1) return;
@@ -644,75 +644,92 @@ function init() {
     })();
 
     let scrollPosition = 0;
-    let scrollTarget = 0;
-    let easeFactor = 0.2; // This controls the "smoothness" or delay
+let scrollTarget = 0;
+let easeFactor = 0.2; // This controls the "smoothness" or delay
+let startY = 0; // For touch scrolling
 
+// Function to update scroll position with easing and call resizer
+function updateScroll() {
+    scrollPosition += (scrollTarget - scrollPosition) * easeFactor;
+    window.scrollTo(0, scrollPosition); // Scroll manually
+
+    // Throttled resizer call
+    throttledResizer();
+
+    requestAnimationFrame(updateScroll); // Keep updating
+}
+
+// Throttle function to limit how often resizer is called
+function throttle(func, limit) {
+    let lastFunc, lastRan;
+    return function () {
+        const context = this, args = arguments;
+        if (!lastRan) {
+            func.apply(context, args);
+            lastRan = Date.now();
+        } else {
+            clearTimeout(lastFunc);
+            lastFunc = setTimeout(function () {
+                if ((Date.now() - lastRan) >= limit) {
+                    func.apply(context, args);
+                    lastRan = Date.now();
+                }
+            }, limit - (Date.now() - lastRan));
+        }
+    };
+}
+
+// Resizer function for dynamic layout adjustments
+function resizer() {
+    var elements = Array.prototype.slice.call(document.querySelectorAll(".g-artboard[data-min-width]")),
+        widthById = {};
+    elements.forEach(function (el) {
+        var parent = el.parentNode,
+            width = widthById[parent.id] || parent.getBoundingClientRect().width,
+            minwidth = el.getAttribute("data-min-width"),
+            maxwidth = el.getAttribute("data-max-width");
+        widthById[parent.id] = width;
+
+        if (+minwidth <= width && (+maxwidth >= width || maxwidth === null)) {
+            el.style.display = "block";
+        } else {
+            el.style.display = "none";
+        }
+    });
+}
+
+// Throttled resizer for performance
+const throttledResizer = throttle(resizer, 100);
+
+// Scroll event handling for desktop
+if (!('ontouchstart' in window || navigator.maxTouchPoints)) {
     // Event listener for mouse wheel (desktop scroll)
     window.addEventListener('wheel', function (event) {
-        event.preventDefault(); // Prevent default scroll behavior
+        event.preventDefault(); // Prevent default scroll behavior on desktop
         scrollTarget += event.deltaY * 0.5; // Adjust this factor to change scroll speed
     }, { passive: false });
-
-    // Throttle function to limit how often resizer is called
-    function throttle(func, limit) {
-        let lastFunc, lastRan;
-        return function () {
-            const context = this, args = arguments;
-            if (!lastRan) {
-                func.apply(context, args);
-                lastRan = Date.now();
-            } else {
-                clearTimeout(lastFunc);
-                lastFunc = setTimeout(function () {
-                    if ((Date.now() - lastRan) >= limit) {
-                        func.apply(context, args);
-                        lastRan = Date.now();
-                    }
-                }, limit - (Date.now() - lastRan));
-            }
-        };
-    }
-
-    // Function to update scroll position with easing and call resizer
-    function updateScroll() {
-        scrollPosition += (scrollTarget - scrollPosition) * easeFactor;
-        window.scrollTo(0, scrollPosition); // Scroll manually
-
-        // Throttled resizer call
-        throttledResizer();
-
-        requestAnimationFrame(updateScroll); // Keep updating
-    }
-
-    // Resizer function for dynamic layout adjustments
-    function resizer() {
-        var elements = Array.prototype.slice.call(document.querySelectorAll(".g-artboard[data-min-width]")),
-            widthById = {};
-        elements.forEach(function (el) {
-            var parent = el.parentNode,
-                width = widthById[parent.id] || parent.getBoundingClientRect().width,
-                minwidth = el.getAttribute("data-min-width"),
-                maxwidth = el.getAttribute("data-max-width");
-            widthById[parent.id] = width;
-
-            if (+minwidth <= width && (+maxwidth >= width || maxwidth === null)) {
-                el.style.display = "block";
-            } else {
-                el.style.display = "none";
-            }
-        });
-    }
-
-    // Throttled resizer for performance
-    const throttledResizer = throttle(resizer, 100);
-
-    // Ensure resizer is called on window resize
-    window.addEventListener('resize', function () {
-        throttledResizer();
+} else {
+    // Touch event handling for mobile
+    window.addEventListener('touchstart', function (event) {
+        startY = event.touches[0].pageY;
     });
 
-    // Start the manual scroll animation
-    updateScroll();
+    window.addEventListener('touchmove', function (event) {
+        event.preventDefault(); // Prevent native scroll on mobile
+        let touchY = event.touches[0].pageY;
+        scrollTarget += (startY - touchY) * 0.5; // Adjust for smooth scrolling
+        startY = touchY; // Update start position for next move
+    }, { passive: false });
+}
+
+// Ensure resizer is called on window resize
+window.addEventListener('resize', function () {
+    throttledResizer();
+});
+
+// Start the manual scroll animation
+updateScroll();
+
 
 }
 
