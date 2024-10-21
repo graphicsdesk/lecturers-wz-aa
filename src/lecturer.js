@@ -1,5 +1,7 @@
 import scrollama from "scrollama";
 const scroller = scrollama();
+import { select, selectAll } from 'd3-selection';
+const d3 = { select, selectAll };
 
 function init() {
     scroller
