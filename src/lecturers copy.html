@@ -2790,7 +2790,8 @@
   <script>
     const scroller = scrollama();
 
-    scroller
+    function init(){
+      scroller
       .setup({
         step: "#scrolly .scrolly-overlay .step",
         offset: 0.5,
@@ -2806,6 +2807,8 @@
       });
 
     window.addEventListener("resize", scroller.resize);
+
+    }
 
     document.addEventListener('DOMContentLoaded', init);
     init();
