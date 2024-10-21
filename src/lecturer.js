@@ -569,7 +569,79 @@ function init() {
             d3.select("#pprof2023").classed('hidden', true);
             d3.select("#plec2023").classed('hidden', true);
         }
+
     });
+    let scrollPosition = 0;
+    let scrollTarget = 0;
+    let easeFactor = 0.2; // This controls the "smoothness" or delay
+
+    // Event listener for mouse wheel (desktop scroll)
+    window.addEventListener('wheel', function (event) {
+        event.preventDefault(); // Prevent default scroll behavior
+        scrollTarget += event.deltaY * 0.5; // Adjust this factor to change scroll speed
+    }, { passive: false });
+
+    // Throttle function to limit how often resizer is called
+    function throttle(func, limit) {
+        let lastFunc, lastRan;
+        return function () {
+            const context = this, args = arguments;
+            if (!lastRan) {
+                func.apply(context, args);
+                lastRan = Date.now();
+            } else {
+                clearTimeout(lastFunc);
+                lastFunc = setTimeout(function () {
+                    if ((Date.now() - lastRan) >= limit) {
+                        func.apply(context, args);
+                        lastRan = Date.now();
+                    }
+                }, limit - (Date.now() - lastRan));
+            }
+        };
+    }
+
+    // Function to update scroll position with easing and call resizer
+    function updateScroll() {
+        scrollPosition += (scrollTarget - scrollPosition) * easeFactor;
+        window.scrollTo(0, scrollPosition); // Scroll manually
+
+        // Throttled resizer call
+        throttledResizer();
+
+        requestAnimationFrame(updateScroll); // Keep updating
+    }
+
+    // Resizer function for dynamic layout adjustments
+    function resizer() {
+        var elements = Array.prototype.slice.call(document.querySelectorAll(".g-artboard[data-min-width]")),
+            widthById = {};
+        elements.forEach(function (el) {
+            var parent = el.parentNode,
+                width = widthById[parent.id] || parent.getBoundingClientRect().width,
+                minwidth = el.getAttribute("data-min-width"),
+                maxwidth = el.getAttribute("data-max-width");
+            widthById[parent.id] = width;
+
+            if (+minwidth <= width && (+maxwidth >= width || maxwidth === null)) {
+                el.style.display = "block";
+            } else {
+                el.style.display = "none";
+            }
+        });
+    }
+
+    // Throttled resizer for performance
+    const throttledResizer = throttle(resizer, 100);
+
+    // Ensure resizer is called on window resize
+    window.addEventListener('resize', function () {
+        throttledResizer();
+    });
+
+    // Start the manual scroll animation
+    updateScroll();
+
 }
 
 document.addEventListener('DOMContentLoaded', init);
