@@ -603,3 +603,103 @@ header {
    margin-bottom: 30px;
  }
 }
+
+#scrolly {
+  position: relative;
+  padding: 1rem;
+}
+
+.scrolly-overlay {
+  position: relative;
+  padding: 0;
+  max-width: 28rem;
+  margin: 0 auto;
+  z-index:1;
+}
+
+.sticky-thing {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  z-index: -1;
+  top: 0;
+  height: 100vh;
+  /* Center everything inside */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.step {
+  margin: 0;
+  margin-top:35vh;
+  margin-bottom:35vh;
+  margin-left:0;
+  margin-right:0;
+  color: #fff;
+  background-color: #fff;
+  border: 2px solid #000000;
+  visibility:hidden;
+}
+
+.step p {
+  text-align: center;
+  padding: 1rem;
+  font-size: 19px;
+  background-color:#fff;
+  opacity:1;
+  visibility:hidden;
+}
+
+.hidden { visibility: hidden; }
+
+#responses > *{
+  transition: all 300ms ease-in-out;
+}
+
+#nonresponses{
+  transition: all 400ms ease-in-out;
+}
+
+#responses-2 > *{
+  transition: all 300ms ease-in-out;
+}
+
+#nonresponses-2{
+  transition: all 400ms ease-in-out;
+}
+
+/* When it's less than 700 pixels wide, do normal scrollytelling */
+@media only screen and (min-width: 700px) {
+  #scrolly.side-by-side {
+    display: flex;
+  }
+
+  #scrolly.side-by-side > div {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.75em;
+  }
+
+  #scrolly.side-by-side .scrolly-overlay {
+    margin-top: 70vh;
+    order: 0;
+    /* Change these to adjust sizing options */
+    min-width: 15rem;
+    max-width: 20rem;
+  }
+
+  #scrolly.side-by-side .sticky-thing {
+    order: 1;
+    flex-grow: 2;
+  }
+  #scrolly.step p{
+    font-size:12px;
+    padding: 0rem;
+    visibility:hidden;
+  }
+}
